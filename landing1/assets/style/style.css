@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: s;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+
+}
+
+header {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(5, 40, 70, 0.4), rgba(0, 0, 0, 0.8)), url("../image/radu-marcusu-mbKApJz6RSU-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.navigation {
+  background-color: rgb(0, 87, 201);
+  width: 100%;
+  padding: 10px 0 10px 0;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 1
+}
+
+.navigation .box-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(1) h1 {
+  font-size: 38px;
+  color: white;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li {
+  list-style: none;
+  margin-left: 60px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+
+  background: #3ea8ff;
+  color: #1b1b1b;
+  border-radius: 10%;
+  transition: 0.5s;
+  animation-duration: 0.5s;
+  border: none;
+  padding: 7px 0 7px 0;
+
+}
+
+.navigation .box-navigation .box:nth-child(3) {
+  display: none;
+}
+
+
+/*Hero Style*/
+
+.hero {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+}
+
+header .hero h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #242424;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+/*ABOUT STYLE*/
+/*Cardstyle*/
+.main-card h1 {
+  text-align: center;
+}
+.main-card {
+  width: auto;
+  height: auto;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.contentcard {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-top: 97px;
+  border-radius: 10%;
+}
+
+.contentcard h2 {
+  color: rgba(0, 0, 0, 0.836);
+  border-bottom: 1px solid rgba(53, 53, 53, 0.233);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contentcard h3 {
+  text-align: center;
+}
+
+.contentcard .other {
+  padding: 20px;
+}
+
+
+.card {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.main-card .head-card img:nth-child(1) {
+  height: 400px;
+  object-fit: cover;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+.head-card img {
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 15%;
+}
+
+.body-card {
+  padding: 10px 15px;
+}
+
+.body-card h1 {
+  margin: 0;
+}
+
+.body-card a svg {
+  width: 31px;
+  float: right;
+}
+
+.body-card svg a:hover {
+  color: #3ea8ff;
+}
+
+.contentcard P {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.content .main-card h1:nth-child(1) {
+  font-size: 40px;
+  padding: 20px 0;
+  color: rgba(0, 0, 0, 0.836);
+  border-bottom: 1px solid rgba(53, 53, 53, 0.233);
+
+}
+
+.main {
+  background-color: whitesmoke;
+}
+
+.main article {
+  line-height: 3;
+  letter-spacing: 0.6px;
+}
+
+.main p {
+  line-height: 2;
+  letter-spacing: 0.6;
+}
+
+/*Aside-About Me*/
+
+aside {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding: 60px;
+  line-height: 2;
+  letter-spacing: 0.8;
+
+}
+
+aside h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-aside {
+  width: 600px;
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+  margin: auto;
+
+}
+
+.content-aside img {
+  width: 120px;
+  height: 140px;
+  margin-right: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+}
+
+/*Footer*/
+
+footer {
+  margin-top: 60px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 87, 201);
+  color: whitesmoke;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+
+}
+
+
+.footer h1 {
+  font-size: 35px;
+  margin-top: 8px;
+  padding-left: 40px;
+}
+
+.footer p {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+
+
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 990px) {
+  .navigation .box-navigation .box:nth-child(2) {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    align-items: center;
+    height: 1400px;
+    box-shadow: 100px;
+    opacity: 0;
+    transition: all .4s ease;
+
+  }
+
+
+
+
+  .navigation .box-navigation .menu-navigation.menu-active {
+    opacity: 1;
+    display: inline-block;
+
+  }
+
+  .navigation .box-navigation .menu-navigation.menu-active .box:nth-child(2) {
+    transition: all .4s ease;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .navigation .box-navigation .box:nth-child(2) ul li a {
+    color: #1b1b1b;
+  }
+
+  .navigation .box-navigation .box:nth-child(3) {
+    display: inline-block;
+  }
+
+  .navigation .box-navigation .box:nth-child(3) i {
+    font-size: 24px;
+  }
+
+
+  header {
+    width: 1000px;
+    height: 500px;
+    background-image: linear-gradient(rgba(5, 40, 70, 0.4), rgba(0, 0, 0, 0.8)), url("../image/radu-marcusu-mbKApJz6RSU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+  }
+
+
+  .hero {
+    position: fixed;
+    top: 300px;
+    transform: translate(50%, -50%);
+    display: relative;
+
+  }
+
+  .hero h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #242424;
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+  .main {
+    position: absolute;
+  }
+
+  .content {
+    display: block;
+  }
+
+
+  .main-card {
+    width: 900px;
+    height: auto;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+  }
+
+  .card {
+    width: 900px;
+    height: auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 30px;
+    margin: 30px;
+  }
+
+  .content .contnetcard h2 {
+    text-align: center;
+  }
+
+  .head-card img {
+    padding: 10px;
+    width: 700px;
+    height: 200px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 15%;
+  }
+
+  aside {
+
+
+    padding: 60px;
+    line-height: 2;
+    letter-spacing: 0.8;
+
+  }
+
+  aside h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .content-aside {
+    width: 600px;
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+    margin: auto;
+
+  }
+
+  .content-aside img {
+    width: 120px;
+    height: 140px;
+    margin-right: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+
+
+  }
+
+  /*Footer*/
+
+  footer {
+    margin-top: 60px;
+    width: 1000px;
+    height: 80px;
+    background-color: rgb(0, 87, 201);
+    color: whitesmoke;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .footer {
+    display: flex;
+
+  }
+
+
+  .footer h1 {
+    font-size: 35px;
+    margin-top: 8px;
+    padding-left: 40px;
+  }
+
+  .footer p {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+
+
+  }
+
+
+}
